@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARRys</title>
+    </head>
+
+    <body>
+        <h1 id="result"></h1>
+        <h1 id="result1"></h1>
+        <h1 id="result2"></h1>
+        <h1 id="result3"></h1>
+        <h1 id="result4"></h1>
+        <h1 id="result5"></h1>
+        <h1 id="result6"></h1>
+        <h1 id="result7"></h1>
+
+        <script>
+            var fruit = ["apple", "banana", "mango", "orange", "kiwi" ]
+
+            var foods = ["rice" , "bread", "milk"]
+
+
+
+            document.getElementById("result").innerHTML = fruit
+
+            fruit.pop()
+            document.getElementById("result1").innerHTML = fruit
+
+            fruit.push("lemon")
+            document.getElementById("result2").innerHTML = fruit
+
+            fruit.shift()
+            document.getElementById("result3").innerHTML = fruit
+
+            fruit.unshift("coconut")
+            document.getElementById("result4").innerHTML = fruit
+
+            fruit.splice(2,3,  "burger", "pizza", "cola")
+            document.getElementById("result5").innerHTML = fruit
+
+            var newArray = fruit.concat(foods)
+            document.getElementById("result6").innerHTML = newArray
+        </script>
+
+        
+
+        
+
+    </body>
+</html>
